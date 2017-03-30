@@ -4,17 +4,42 @@
 
 /* local fonts */
 
+@include font-face('BebasBold','BebasBold');
+@include font-face('BebasLight','BebasLight');
+@include font-face('BebasRegular','BebasRegular');
+
 /* variables */
+
+$main-font: BebasRegular, sans-serif;
+$bold-font: BebasBold, sans-serif;
+$light-font: BebasLight, sans-serif;
+
+$dark-color: #2a363b;
+$white-color: #e7e7e7;
+$grey-color: #bdbdbd;
+$green-color: #99b898;
+$red-color: #e84a5f;
 
 /* global settings */
 
+
 body {
   margin: 0;
+  font-size: 18px;
+  font-family: $main-font;
 }
 
 html {
   min-height: 100%;
   position: relative;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* import sections */

@@ -1,0 +1,20 @@
+// header section
+
+header.header
+    .container
+        .row
+            .logo
+                a.logo__link(href='#')
+
+            nav.nav
+                .nav-hidden
+                ul.nav__list
+                    -
+                    each href, item in nav
+                            li.nav__list_item= item
+                                a.nav__list_item-link(href='' + href)
+
+            .intro
+                h1 Профессиональная<br>разработка сайтов<br>"под ключ"
+                a.button(href='#') Заказать сайт
+                .scroll-ind

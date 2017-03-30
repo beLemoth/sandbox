@@ -1,0 +1,28 @@
+// gallery section
+
+section.gallery
+
+    .container
+        .row
+
+            h2 Галерея работ
+
+            .gallery-wrap
+
+                .col-md-6
+
+                    .gallery-preview
+
+                .col-md-6
+
+                    .gallery-desc
+                        h3.gallery-desc__title Landing page
+                        p.gallery-desc__text.
+                            один из самых популярных на данный момент форматов сайта
+                            плюсы - простота, понятность, продоваемость.
+
+                    .gallery-nav
+                        ul.gallery-nav__list
+                            - for(var i=0; i<3; i++)
+                                li.gallery-nav__list_item= (i+1)
+

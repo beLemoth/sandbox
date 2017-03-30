@@ -1,0 +1,17 @@
+// about section
+
+section.about
+
+    .container
+        .row
+            h2 О работе
+
+            p.about__desc.
+                <strong>Создание персонального сайта</strong> - важный этап  в развитии <b>любого</b> бизнеса<br>
+                мы готовы предложить свои услуги по <strong>комплексной разработке</strong> полностью готового <strong>интернет продукта</strong><br>
+                дальнейшей его <strong>поддержке</strong>, а также <strong>модернизации и поддержке</strong> уже существующих проектов.
+
+            .advantages
+                -
+                each advant, name in advantages
+                    .advantage(class='' + name)= advant
