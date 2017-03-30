@@ -1,0 +1,23 @@
+@import 'common/box-sizing';
+@import 'common/mixins';
+@import 'common/clearfix';
+
+/* local fonts */
+
+/* variables */
+
+/* global settings */
+
+body {
+  margin: 0;
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+/* import sections */
+
+@import 'common/sections/*.scss';
+
