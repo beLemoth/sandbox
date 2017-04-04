@@ -1,20 +1,27 @@
 // header section
 
 header.header
-    .container
-        .row
-            .logo
-                a.logo__link(href='#')
 
-            nav.nav
-                .nav-hidden
-                ul.nav__list
-                    -
-                    each href, item in nav
-                            li.nav__list_item= item
-                                a.nav__list_item-link(href='' + href)
+    .header-wrap
 
+        .container
+            .header-top
+                .row
+                    .col-xs-6
+                        .logo
+                            a.logo__link(href='#')
+                    .col-xs-6
+                        nav.nav
+                            .nav-hidden
+                            ul.nav__list
+                                -
+                                each href, item in nav
+                                        li.nav__list_item
+                                            a.nav__list_item-link(href='' + href)= item
             .intro
-                h1 Профессиональная<br>разработка сайтов<br>"под ключ"
-                a.button(href='#') Заказать сайт
-                .scroll-ind
+                .row
+                    .col-md-12
+                        h1.intro__h1 Профессиональная<br>разработка сайтов
+                        p.intro__text "под ключ"
+                        a.button(href='#') Заказать сайт
+                        .scroll-ind

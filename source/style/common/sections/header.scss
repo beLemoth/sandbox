@@ -1,1 +1,67 @@
 //HEADER
+
+.header {
+
+  background: url(../img/header-bg.jpg) top center no-repeat #212B2F;
+  background-size: auto;
+
+  &-wrap {
+    height: 100%;
+    background-color: rgba(42,54,59,.8);
+  }
+
+  &-top {
+    height: 30vh;
+    padding-top: 100px;
+  }
+
+  .logo {
+    &__link {
+      display: block;
+      width:285px;
+      height: 190px;
+      background: url(../img/sprite.png) 0px 0px no-repeat;
+      background-size: contain;
+    }
+  }
+
+  .nav {
+    text-align: right;
+
+    &-hidden {
+      cursor: pointer;
+      margin: 0 0 rem(20) auto;
+      width: rem(60);
+      height: rem(60);
+      border: 3px solid $white-color;
+      border-radius: 50%;
+    }
+
+    &__list {
+      &_item {
+        &-link {
+          @include font-type($white-color, $main-font, rem(36), 2, 0);
+          text-decoration: none;
+        }
+      }
+    }
+
+  }
+
+  .intro {
+
+    &__h1 {
+      margin-bottom: 0;
+    }
+    &__text {
+      text-align: center;
+      @include font-type($white-color, $bold-font, rem(48), 1, 0);
+    }
+
+  }
+
+
+
+
+
+}
