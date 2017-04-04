@@ -1,6 +1,7 @@
 @import 'common/box-sizing';
 @import 'common/mixins';
 @import 'common/clearfix';
+@import 'common/functions';
 
 /* local fonts */
 
@@ -41,6 +42,36 @@ ul {
 a {
   text-decoration: none;
 }
+
+.header,
+.about,
+.gallery,
+.footer {
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  @include font-type($white-color, $bold-font, rem(90), 1.2, 0);
+  &:first-line,
+  &:last-child {
+    font-size: rem(48);
+  }
+
+}
+
+.button {
+  display: block;
+  margin: auto;
+  width: rem(345);
+  height: rem(75);
+  background-color: $red-color;
+  border-radius: 5px;
+  text-align: center;
+  line-height: rem(75);
+  @include font-type($white-color, $bold-font, rem(48), rem(85), 0);
+}
+
 
 /* import sections */
 
