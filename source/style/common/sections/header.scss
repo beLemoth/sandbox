@@ -4,6 +4,7 @@
 
   background: url(../img/header-bg.jpg) top center no-repeat #212B2F;
   background-size: auto;
+  position: relative;
 
   &-wrap {
     height: 100%;
@@ -19,9 +20,8 @@
     &__link {
       display: block;
       width:285px;
-      height: 190px;
-      background: url(../img/sprite.png) 0px 0px no-repeat;
-      background-size: contain;
+      height: 212px;
+      background: url(../img/sprite.png);
     }
   }
 
@@ -50,18 +50,33 @@
 
   .intro {
 
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%);
+
     &__h1 {
       margin-bottom: 0;
+      text-align: center;
     }
+
     &__text {
       text-align: center;
-      @include font-type($white-color, $bold-font, rem(48), 1, 0);
+      @include font-type($white-color, $bold-font, rem(48), 1.4, 0);
+      margin-bottom: 60px;
     }
 
   }
 
-
-
-
+  .scroll-ind {
+    position: absolute;
+    left: 50%;
+    bottom: rem(100);
+    transform: translateX(-50%);
+    background-image: url(../img/sprite.png);
+    background-position: 0px -212px;
+    width: 40px;
+    height: 70px;
+  }
 
 }

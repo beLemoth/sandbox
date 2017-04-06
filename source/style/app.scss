@@ -41,6 +41,10 @@ ul {
 
 a {
   text-decoration: none;
+
+  &:hover  {
+    text-decoration: none;
+  }
 }
 
 .header,
@@ -52,7 +56,7 @@ a {
 
 h1 {
   text-align: center;
-  @include font-type($white-color, $bold-font, rem(90), 1.2, 0);
+  @include font-type($white-color, $bold-font, rem(90), 1.4, 0);
   &:first-line,
   &:last-child {
     font-size: rem(48);
