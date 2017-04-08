@@ -19,9 +19,10 @@
   .logo {
     &__link {
       display: block;
-      width:285px;
+      width: 285px;
       height: 212px;
-      background: url(../img/sprite.png);
+      background: url(../img/logo.png) center no-repeat;
+      background-size: cover;
     }
   }
 
@@ -31,16 +32,20 @@
     &-hidden {
       cursor: pointer;
       margin: 0 0 rem(20) auto;
-      width: rem(60);
-      height: rem(60);
+      width: 60px;
+      height: 60px;
       border: 3px solid $white-color;
       border-radius: 50%;
+      color: $white-color;
+      line-height: 54px;
+      text-align: center;
+      font-size: 30px;
     }
 
     &__list {
       &_item {
         &-link {
-          @include font-type($white-color, $main-font, rem(36), 2, 0);
+          @include font-type($white-color, $main-font, 24px, 2, 0);
           text-decoration: none;
         }
       }
@@ -52,8 +57,8 @@
 
       position: absolute;
       left: 50%;
-      top: 50%;
-      transform: translate(-50%);
+      top: 35%;
+      transform: translateX(-50%);
 
     &__h1 {
       margin-bottom: 0;
@@ -62,7 +67,7 @@
 
     &__text {
       text-align: center;
-      @include font-type($white-color, $bold-font, rem(48), 1.4, 0);
+      @include font-type($white-color, $bold-font, 48px, 1.4, 0);
       margin-bottom: 60px;
     }
 
@@ -73,10 +78,6 @@
     left: 50%;
     bottom: rem(100);
     transform: translateX(-50%);
-    background-image: url(../img/sprite.png);
-    background-position: 0px -212px;
-    width: 40px;
-    height: 70px;
   }
 
 }

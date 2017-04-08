@@ -14,4 +14,6 @@ section.about
             .advantages
                 -
                 each advant, name in advantages
+                    svg
+                        use(xlink:href="#clock")
                     .advantage(class='' + name)= advant
