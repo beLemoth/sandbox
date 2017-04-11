@@ -5,13 +5,16 @@ section.gallery
     .container
         .row
 
-            h2 Галерея работ
+            h2.gallery__h2 Галерея работ
 
             .gallery-wrap
 
                 .col-md-6
 
                     .gallery-preview
+                        img.gallery-preview__item(src="assets/img/gallery/1.png" alt="1")
+                        img.gallery-preview__item(src="assets/img/gallery/2.png" alt="2")
+                        img.gallery-preview__item(src="assets/img/gallery/3.png" alt="3")
 
                 .col-md-6
 
@@ -20,9 +23,9 @@ section.gallery
                         p.gallery-desc__text.
                             один из самых популярных на данный момент форматов сайта
                             плюсы - простота, понятность, продоваемость.
-
-                    .gallery-nav
-                        ul.gallery-nav__list
-                            - for(var i=0; i<3; i++)
-                                li.gallery-nav__list_item= (i+1)
+                        .gallery-nav
+                            ul.gallery-nav__list
+                                li.gallery-nav__list_item 1
+                                li.gallery-nav__list_item.active 2
+                                li.gallery-nav__list_item 3
 

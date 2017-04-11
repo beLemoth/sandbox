@@ -66,9 +66,17 @@ h1 {
 
 h2 {
   @include font-type($dark-color, $bold-font, 60px, 1.4, 0);
-  width: 50%;
-  border-bottom: 3px solid $dark-color;
   margin-bottom: rem(80);
+  position: relative;
+
+  &:after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 50%;
+    border-bottom: 3px solid $dark-color;
+  }
+
 }
 
 p {

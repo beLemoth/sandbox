@@ -2,4 +2,70 @@
 
 .gallery {
 
+  padding: 80px 0 0 0;
+  background-color: $green-color;
+
+  &__h2 {
+    text-align: right;
+    &:after {
+      right: 0;
+    }
+  }
+
+  .gallery-preview {
+
+  }
+
+  .gallery-desc {
+
+    padding: 100px 150px 300px 100px;
+    position: relative;
+
+    &__title {
+      @include font-type($dark-color, $bold-font, 36px, 2, 0);
+      margin-bottom: 60px;
+    }
+    &__text {
+      @include font-type($dark-color, $main-font, 24px, 1.5, 0);
+    }
+  }
+
+  .gallery-nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    &__list {
+      display: inline-block;
+      text-align: justify;
+      width: 100%;
+
+      &:before {
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        content: '\e079';
+      }
+
+      &:after {
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        content: '\e079';
+      }
+
+      &_item {
+        display: inline-block;
+        @include font-type($dark-color, $main-font, 90px, 1.5, 0);
+        text-shadow: 4px 4px 10px rgba(42, 54, 59, 0.82);
+        vertical-align: middle;
+
+        &.active {
+          color: $red-color;
+          font-size: 240px;
+          line-height: 1;
+          text-shadow: 11px 11px 10px rgba(42, 54, 59, 0.82);
+        }
+      }
+    }
+  }
 }
