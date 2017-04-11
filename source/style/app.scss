@@ -51,7 +51,7 @@ a {
 .about,
 .gallery,
 .footer {
-  height: 100vh;
+  height: 1080px;
 }
 
 h1 {
@@ -75,6 +75,10 @@ p {
   @include font-type($dark-color, $main-font, 24px, 1.8, 0);
 }
 
+button {
+  border: none;
+}
+
 .button {
   display: block;
   margin: auto;
@@ -85,6 +89,10 @@ p {
   text-align: center;
   line-height: 75px;
   @include font-type($white-color, $bold-font, 48px, 80px, 0);
+}
+
+svg {
+  display: none;
 }
 
 
