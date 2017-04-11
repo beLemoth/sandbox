@@ -4,6 +4,12 @@
   padding: 80px 0 0 0;
   background-color: $white-color;
 
+  &__h2 {
+    &:after {
+      left: 0;
+    }
+  }
+
   &__desc {
     padding-bottom: 40px;
   }
