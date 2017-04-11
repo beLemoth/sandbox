@@ -8,7 +8,7 @@ module.exports = function() {
           pretty: true
         }
       }))
-      .pipe($.gp.cheerio({
+      /*.pipe($.gp.cheerio({
         run: function ($) {
           $('[fill]').removeAttr('fill');
           $('[stroke]').removeAttr('stroke');
@@ -16,12 +16,12 @@ module.exports = function() {
         },
         parserOptions: { xmlMode: true }
       }))
-      .pipe($.gp.replace('&gt;', '>'))
+      .pipe($.gp.replace('&gt;', '>'))*/
       .pipe($.gp.svgSprite({
-        mode: {
-          symbol: {
-            sprite: "../sprite.svg"
-          }
+          mode: {
+            symbol: {
+              sprite: "../sprite.svg"
+            }
         }
       }))
       .pipe($.gulp.dest($.config.root + '/assets/img'))
