@@ -3,11 +3,10 @@
 .footer {
 
   background-color: $dark-color;
-  z-index: 10;
 
   &-wrap {
     position: relative;
-    padding-top: 20px;
+    padding-top: rem(20);
     height: 100%;
   }
 
@@ -18,29 +17,29 @@
   }
 
   .order {
-    width: 660px;
+    width: rem(660);
     margin: auto;
 
     &__mail,
     &__theme,
     &__desc {
       width: 100%;
-      height: 60px;
-      border-radius: 5px;
+      height: rem(60);
+      border-radius: rem(5);
       border: none;
-      padding: 0 20px;
-      margin-bottom: 20px;
+      padding: 0 rem(20);
+      margin-bottom: rem(20);
     }
 
     &__desc {
-      padding-top: 18px;
-      height: 235px;
+      padding-top: rem(18);
+      height: rem(235);
       resize: none;
     }
   }
 
   &__contacts {
-    @include font-type($white-color, $light-font, 24px, 1.8, 0);
+    @include font-type($white-color, $light-font, rem(24), 1.8, 0);
     display: block;
   }
 
@@ -49,7 +48,7 @@
     width: 100%;
 
     &_title {
-      @include font-type($white-color, $light-font, 24px, 1.8, 0);
+      @include font-type($white-color, $light-font, rem(24), 1.8, 0);
       text-align: center;
     }
 
@@ -60,10 +59,10 @@
 
       &-item {
         display: inline-block;
-        font-size: 48px;
+        font-size: rem(48);
         width: 24.3%;
         text-align: center;
-        line-height: 75px;
+        line-height: rem(75);
 
         &-link {
           color: $white-color;
@@ -87,8 +86,8 @@
     text-align: center;
     color: $white-color;
     position: relative;
-    width: 100px;
-    height: 100px;
+    width: rem(100);
+    height: rem(100);
     margin: auto;
 
 
@@ -97,7 +96,7 @@
       top: 0;
       left: 0;
       right: 0;
-      font-size: 60px;
+      font-size: rem(60);
     }
 
     &_link {
@@ -106,9 +105,9 @@
       left: 0;
       top: 0;
       right: 0;
-      @include font-type($white-color, $main-font, 24px, 1.8, 0);
+      @include font-type($white-color, $main-font, rem(24), 1.8, 0);
       display: inline-block;
-      padding-top: 50px;
+      padding-top: rem(50);
 
       &:focus {
         text-decoration: none;
@@ -122,7 +121,7 @@
   }
 
   .copyr {
-    @include font-type($white-color, $light-font, 24px, 1.8, 0);
+    @include font-type($white-color, $light-font, rem(24), 1.8, 0);
     text-align: center;
   }
 
@@ -131,8 +130,6 @@
     right: 0;
     left: 0;
     bottom: 0;
-    padding-bottom: 20px;
+    padding-bottom: rem(20);
   }
 }
-
-

@@ -1,7 +1,7 @@
 @import 'common/box-sizing';
 @import 'common/mixins';
 @import 'common/clearfix';
-@import 'common/functions';
+@import 'common/_functions';
 
 /* local fonts */
 
@@ -69,7 +69,7 @@ h1 {
 
 h2 {
   @include font-type($dark-color, $bold-font, rem(60), 1.4, 0);
-  margin-bottom: rem(80);
+  margin-bottom: rem(50);
   position: relative;
 
   &:after {
@@ -126,6 +126,6 @@ svg {
 /* import sections */
 
 @import 'common/sections/*.scss';
-
+@import 'common/animation/*.scss';
 @import 'common/media';
 

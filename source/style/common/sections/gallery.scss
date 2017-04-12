@@ -2,7 +2,7 @@
 
 .gallery {
 
-  padding: 3vh 0 0 0;
+  padding: 4vh 0 0 0;
   background-color: $green-color;
 
   &__h2 {
@@ -13,20 +13,44 @@
   }
 
   .gallery-preview {
+    @extend .clearfix;
 
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    padding: rem(40) 0;
+
+    &__item {
+      float: left;
+      width: 50%;
+      overflow: hidden;
+      height: 100%;
+      box-shadow: rem(11) rem(11) rem(10) rgba(42, 54, 59, 0.82);
+
+      &.active {
+        position: absolute;
+        top: 0;
+        left: 25%;
+      }
+
+      &_img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
   }
 
   .gallery-desc {
 
-    padding: 100px 150px 300px 100px;
+    padding: 0 rem(150) rem(300) rem(100);
     position: relative;
 
     &__title {
-      @include font-type($dark-color, $bold-font, 36px, 2, 0);
-      margin-bottom: 60px;
+      @include font-type($dark-color, $bold-font, rem(36), 2, 0);
+      margin-bottom: rem(60);
     }
     &__text {
-      @include font-type($dark-color, $main-font, 24px, 1.5, 0);
+      @include font-type($dark-color, $main-font, rem(24), 1.5, 0);
     }
   }
 
@@ -44,8 +68,8 @@
       &:before,
       &:after {
         display: inline-block;
-        @include font-type($dark-color, $icon-font, 90px, 1.5, 0);
-        text-shadow: 11px 11px 10px rgba(42, 54, 59, 0.82);
+        @include font-type($dark-color, $icon-font, rem(90), 1.5, 0);
+        text-shadow: rem(11) rem(11) rem(10) rgba(42, 54, 59, 0.82);
         vertical-align: middle;
         cursor: pointer;
       }
@@ -60,16 +84,16 @@
 
       &_item {
         display: inline-block;
-        @include font-type($dark-color, $main-font, 90px, 1.5, 0);
-        text-shadow: 4px 4px 10px rgba(42, 54, 59, 0.82);
+        @include font-type($dark-color, $main-font, rem(90), 1.5, 0);
+        text-shadow: rem(4) rem(4) rem(10) rgba(42, 54, 59, 0.82);
         vertical-align: middle;
         margin: 8%;
 
         &.active {
           color: $red-color;
-          font-size: 240px;
+          font-size: rem(240);
           line-height: 1;
-          text-shadow: 11px 11px 10px rgba(42, 54, 59, 0.82);
+          text-shadow: rem(11) rem(11) rem(10) rgba(42, 54, 59, 0.82);
           margin: 5%;
         }
       }

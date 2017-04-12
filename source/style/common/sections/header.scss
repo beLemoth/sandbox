@@ -13,14 +13,14 @@
 
   &-top {
     height: 30vh;
-    padding-top: 100px;
+    padding-top: rem(90);
   }
 
   .logo {
     &__link {
       display: block;
-      width: 285px;
-      height: 212px;
+      width: rem(285);
+      height: rem(212);
       background: url(../img/logo.png) center no-repeat;
       background-size: cover;
     }
@@ -29,24 +29,16 @@
   .nav {
     text-align: right;
 
-    &-hidden {
-      cursor: pointer;
-      margin: 0 0 rem(20) auto;
-      width: 60px;
-      height: 60px;
-      border: 3px solid $white-color;
-      border-radius: 50%;
-      color: $white-color;
-      line-height: 54px;
-      text-align: center;
-      font-size: 30px;
-    }
-
     &__list {
       &_item {
         &-link {
-          @include font-type($white-color, $main-font, 24px, 2, 0);
+          @include font-type($white-color, $main-font, rem(24), 2, 0);
           text-decoration: none;
+          transition: color ease-in .15s;
+
+          &:hover {
+            color: $red-color;
+          }
         }
       }
     }
@@ -66,17 +58,10 @@
 
     &__text {
       text-align: center;
-      @include font-type($white-color, $bold-font, 48px, 1.4, 0);
-      margin-bottom: 60px;
+      @include font-type($white-color, $bold-font, rem(48), 1.4, 0);
+      margin-bottom: rem(60);
     }
 
-  }
-
-  .scroll-ind {
-    position: absolute;
-    left: 50%;
-    bottom: rem(100);
-    transform: translateX(-50%);
   }
 
 }
