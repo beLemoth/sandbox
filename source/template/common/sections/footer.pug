@@ -1,42 +1,48 @@
 // footer section
 
-footer.footer
+footer.footer#contacts
 
-    .container
+    .container.footer-wrap
         .row
-
-            .footer-logo
-
-            form.order
-                input.order__mail(type='email', placeholder='Ваш email')
-                br
-                input.order__theme(type='text', placeholder='Заголовок заказа')
-                br
-                textarea.order__desc(type='text', placeholder='Текст заказа')
-                br
-                button.button(type='submit') Заказать сайт
-
-            .col-md-4
-                .footer__contacts
-                    span.footer__contacts.tel Тел: +375-29-194-38-46
-                    span.footer__contacts.email mail@sandbox.h1n.ru
-
-            .col-md-4
-                .footer__socials
-                    .footer__socials_title Социальные сети
-                    ul.footer__socials_list
-                        li.footer__socials_list-item.git
-                            a(href='#')
-                        li.footer__socials_list-item.facebook
-                            a(href='#')
-                        li.footer__socials_list-item.vk
-                            a(href='#')
-                        li.footer__socials_list-item.twitter
-                            a(href='#')
-
-            .col-md-4
-                .footer__upper
-                    a(href='#') Наверх
-
             .col-md-12
-                .small &copy; beLemoth, 2017
+
+                .footer-logo
+
+        .row
+            .col-md-12
+
+                form.order
+                    input.order__mail(type='email', placeholder='Ваш email')
+                    br
+                    input.order__theme(type='text', placeholder='Заголовок заказа')
+                    br
+                    textarea.order__desc(type='text', placeholder='Текст заказа')
+                    br
+                    button.button(type='submit') Заказать сайт
+
+        .row
+            .footer-bottom
+                .col-md-4
+                    .footer__contacts
+                        span.footer__contacts.tel Тел: +375-29-194-38-46
+                        span.footer__contacts.email email: mail@sandbox.h1n.ru
+
+                .col-md-4
+                    .footer__socials
+                        .footer__socials_title Социальные сети
+                        ul.footer__socials_list
+                            li.footer__socials_list-item.git
+                                a.footer__socials_list-item-link.fa.fa-github(href='#')
+                            li.footer__socials_list-item.facebook
+                                a.footer__socials_list-item-link.fa.fa-facebook-official(href='#')
+                            li.footer__socials_list-item.vk
+                                a.footer__socials_list-item-link.fa.fa-vk(href='#')
+                            li.footer__socials_list-item.twitter
+                                a.footer__socials_list-item-link.fa.fa-twitter(href='#')
+
+                .col-md-4
+                    .footer__upper.fa.fa-angle-double-up
+                        a.footer__upper_link(href='#') Наверх
+
+                .col-md-12
+                    .copyr &copy; beLemoth, 2017

@@ -8,12 +8,14 @@
 @include font-face('BebasBold','BebasBold');
 @include font-face('BebasLight','BebasLight');
 @include font-face('BebasRegular','BebasRegular');
+@include font-face('FontAwesome', 'FontAwesome');
 
 /* variables */
 
 $main-font: BebasRegular, sans-serif;
 $bold-font: BebasBold, sans-serif;
 $light-font: BebasLight, sans-serif;
+$icon-font: FontAwesome, serif;
 
 $dark-color: #2a363b;
 $white-color: #e7e7e7;
@@ -26,13 +28,14 @@ $red-color: #e84a5f;
 
 body {
   margin: 0;
-  font-size: 18px;
   font-family: $main-font;
+  font-size: 100%;
 }
 
 html {
   min-height: 100%;
   position: relative;
+  font-size: 18px;
 }
 
 ul {
@@ -51,21 +54,21 @@ a {
 .about,
 .gallery,
 .footer {
-  height: 1080px;
+  height: 100vh;
 }
 
 h1 {
   text-align: center;
-  @include font-type($white-color, $bold-font, 90px, 1.4, 0);
+  @include font-type($white-color, $bold-font, rem(90), 1.4, 0);
   &:first-line,
   &:last-child {
-    font-size: 48px;
+    font-size: rem(48);
   }
 
 }
 
 h2 {
-  @include font-type($dark-color, $bold-font, 60px, 1.4, 0);
+  @include font-type($dark-color, $bold-font, rem(60), 1.4, 0);
   margin-bottom: rem(80);
   position: relative;
 
@@ -80,23 +83,39 @@ h2 {
 }
 
 p {
-  @include font-type($dark-color, $main-font, 24px, 1.8, 0);
+  @include font-type($dark-color, $main-font, rem(24), 1.8, 0);
 }
 
 button {
   border: none;
+
+  &:focus,
+  &:active {
+    border: none;
+    outline: 0;
+  }
 }
 
 .button {
   display: block;
   margin: auto;
-  width: 345px;
-  height: 75px;
+  width: rem(345);
+  height: rem(75);
   background-color: $red-color;
-  border-radius: 5px;
+  border-radius: rem(5);
   text-align: center;
-  line-height: 75px;
-  @include font-type($white-color, $bold-font, 48px, 80px, 0);
+  line-height: rem(75);
+  @include font-type($white-color, $bold-font, rem(48), rem(80), 0);
+
+  &:focus {
+    text-decoration: none;
+    color: $white-color;
+  }
+
+  &:hover {
+    color: $white-color;
+  }
+
 }
 
 svg {
@@ -107,4 +126,6 @@ svg {
 /* import sections */
 
 @import 'common/sections/*.scss';
+
+@import 'common/media';
 
