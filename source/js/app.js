@@ -1,7 +1,8 @@
 (function() {
   'use strict';
 
-  $('.nav-hidden').on('click', function() {
+  $('.nav-hidden-bar').on('click', function() {
+      $(this).toggleClass('active');
       $('.nav__list').slideToggle();
   });
 
