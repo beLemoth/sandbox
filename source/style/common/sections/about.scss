@@ -1,7 +1,7 @@
 // about section
 
 .about {
-  padding: 4vh 0 0 0;
+  padding: rem(50) 0 0 0;
   background-color: $white-color;
 
   &__h2 {
@@ -15,18 +15,33 @@
   }
 
   .advantage {
-
-    @include font-type($dark-color, $main-font, rem(24), rem(155), 0);
+    height: rem(155);
     margin-bottom: rem(-60);
+    position: relative;
+
+    &__text {
+      @include font-type($dark-color, $main-font, rem(24), 1, 0);
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
 
     &:nth-child(odd) {
-      padding-left: rem(190);
-      text-align: left;
+
+      .advantage__text {
+        text-align: left;
+        left: rem(190)
+      }
+;
     }
 
     &:nth-child(even) {
-      padding-right: rem(190);
-      text-align: right;
+
+      .advantage__text {
+        right: rem(190);
+        text-align: right;
+      }
+
     }
   }
 

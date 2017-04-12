@@ -34,7 +34,7 @@
   }
   100% {
     opacity: 0;
-    transform: translateY(46px);
+    transform: translateY(rem(46));
   }
 
 }

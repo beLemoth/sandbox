@@ -1,5 +1,5 @@
 {
-  "name": "builder",
+  "name": "sandbox",
   "version": "1.0.0",
   "ignore": [
     "**/.*",
@@ -8,6 +8,7 @@
   ],
   "dependencies": {
     "jquery": "2.1.3",
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^3.3.7",
+    "font-awesome": "fontawesome#^4.7.0"
   }
 }

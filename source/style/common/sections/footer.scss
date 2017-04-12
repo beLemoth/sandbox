@@ -11,13 +11,17 @@
   }
 
   &-logo {
-    height: 25vh;
-    width: 100%;
+    min-height: rem(200);
+    width: 50%;
+    margin: auto;
+    min-width: rem(200);
+    max-width: rem(300);
     background: url('../img/logo.png') center center no-repeat;
+    background-size: contain;
   }
 
   .order {
-    width: rem(660);
+    max-width: rem(660);
     margin: auto;
 
     &__mail,
@@ -60,13 +64,18 @@
       &-item {
         display: inline-block;
         font-size: rem(48);
-        width: 24.3%;
+        width: 24.2%;
         text-align: center;
-        line-height: rem(75);
+        line-height: rem(60);
 
         &-link {
           color: $white-color;
           display: inline-block;
+          vertical-align: middle;
+
+          &:bofore {
+            font-size: rem(48);
+          }
 
           &:focus {
             text-decoration: none;
