@@ -12,9 +12,12 @@ section.gallery#gallery
                 .col-md-6
 
                     .gallery-preview
-                        img.gallery-preview__item(src="assets/img/gallery/1.png" alt="1")
-                        img.gallery-preview__item(src="assets/img/gallery/2.png" alt="2")
-                        img.gallery-preview__item(src="assets/img/gallery/3.png" alt="3")
+                        .gallery-preview__item
+                            img.gallery-preview__item_img(src="assets/img/gal-1.png" alt="1")
+                        .gallery-preview__item.active
+                            img.gallery-preview__item_img(src="assets/img/gal-2.png" alt="2")
+                        .gallery-preview__item
+                            img.gallery-preview__item_img(src="assets/img/gal-3.png" alt="3")
 
                 .col-md-6
 

@@ -12,7 +12,11 @@ header.header
                             a.logo__link(href='#')
                     .col-xs-6
                         nav.nav
-                            .nav-hidden.fa.fa-bars
+                            .nav-hidden
+                                .nav-hidden-bar.active
+                                    i
+                                    i
+                                    i
                             ul.nav__list
                                 -
                                 each href, item in nav
@@ -25,4 +29,4 @@ header.header
                         p.intro__text "под ключ"
                         a.button.intro__order(href='#') Заказать сайт
 
-            .scroll-ind.icon-scroll
+            .scroll-ind
