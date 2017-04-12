@@ -1,0 +1,40 @@
+// scroll animate icon
+
+.scroll-ind,
+.scroll-ind:before {
+  position: absolute;
+  left: 50%;
+}
+
+
+.scroll-ind {
+  width: rem(40);
+  height: rem(70);
+  margin-left: rem(-20);
+  bottom: rem(50);
+  border: 2px solid $white-color;
+  border-radius: rem(20);
+}
+
+.scroll-ind:before {
+  content: '';
+  width: rem(8);
+  height: rem(8);
+  background: $white-color;
+  margin-left: rem(-4);
+  top: rem(8);
+  border-radius: 50%;
+  animation: scroll 1.5s infinite;
+}
+
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(46px);
+  }
+
+}
