@@ -1,7 +1,7 @@
 // about section
 
 .about {
-  padding: rem(50) 0 0 0;
+  padding: rem(80) 0 rem(140) 0;
   background-color: $white-color;
 
   &__h2 {
@@ -27,21 +27,17 @@
     }
 
     &:nth-child(odd) {
-
       .advantage__text {
         text-align: left;
-        left: rem(190)
+        left: rem(190);
       }
-;
     }
 
     &:nth-child(even) {
-
       .advantage__text {
         right: rem(190);
         text-align: right;
       }
-
     }
   }
 

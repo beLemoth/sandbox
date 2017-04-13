@@ -31,10 +31,10 @@
 
   &-bar {
     position: absolute;
-    top: 25%;
+    top: 50%;
     right: 25%;
     width: rem(30);
-    height: rem(30);
+    transform: translateY(-50%);
 
     i {
       background-color: $white-color;
